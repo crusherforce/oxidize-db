@@ -1,0 +1,15 @@
+[package]
+name    = "oxidize-cli"
+version = "0.1.0"
+edition = "2021"
+description = "CLI and REPL for oxidize-db"
+license = "MIT"
+
+[[bin]]
+name = "oxidize-db"
+path = "src/main.rs"
+
+[dependencies]
+oxidize-core = { path = "../oxidize-core" }
+clap         = { workspace = true }
+tokio        = { workspace = true }

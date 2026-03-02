@@ -1,0 +1,16 @@
+[package]
+name    = "oxidize-core"
+version = "0.1.0"
+edition = "2021"
+description = "Core engine for oxidize-db: SQLite-compatible database in Rust"
+license = "MIT"
+
+[dependencies]
+thiserror   = { workspace = true }
+sqlparser   = { workspace = true }
+byteorder   = { workspace = true }
+parking_lot = { workspace = true }
+moka        = { workspace = true }
+tokio       = { workspace = true }
+serde       = { workspace = true }
+bincode     = { workspace = true }
