@@ -7,7 +7,9 @@ use std::io::{self, BufRead, Write};
 #[derive(Parser, Debug)]
 #[command(name = "oxidize-db", version, about, long_about = None)]
 struct Args {
-    /// Database file to open or create (omit for in-memory / REPL mode)
+    /// Database path to open/create; omit to run in-memory (`:memory:`).
+    ///
+    /// Example: `oxidize-db mydb.db`
     db_file: Option<String>,
 }
 
